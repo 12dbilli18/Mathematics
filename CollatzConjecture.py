@@ -1,8 +1,5 @@
 import sys
 
-#Set the recursion limit high enough so that the interations isn't a problem
-sys.setrecursionlimit(3000)
-
 #Initialize the list of previously found values. This is so that we know if we hit a loop and therefore solved the conjecture.
 values_list = []
 
@@ -30,7 +27,4 @@ def calculate(value):
 			break
 		index = index + 1
 
-
-def sanatizeArg(arg):
-	return 2
 calculate(int(sys.argv[1]))
